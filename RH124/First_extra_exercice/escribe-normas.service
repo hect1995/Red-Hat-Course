@@ -1,0 +1,10 @@
+[Unit]
+Description=RH124 extra homework escribe-normas
+After=limpia-secretos.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/escribe-normas.sh
+
+[Install]
+WantedBy=multi-user.target
